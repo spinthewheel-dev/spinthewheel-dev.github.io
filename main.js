@@ -5,7 +5,7 @@ import { Wheel } from "./wheel.js";
 // 2. Decide where you want it to go:
 const container = document.querySelector('.right');
 
-document.getElementById("input").value = "Hannes,Timo,Max,Jan,Moritz,Matze,Fred,Lukas,Gortzen,Lars,Simon,Eric"
+document.getElementById("input").value = "Hannes,Lukas,Max,Timo,Gortzen,Simon,Jan,Fred,Lars,Matze,Moritz,Eric"
 
 // 3. Create the wheel in the container and initialise it with the props:
 const wheel = new Wheel(container, {items: [{label: "text"}]});
