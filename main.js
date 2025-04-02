@@ -35,13 +35,17 @@ document.getElementById("input").addEventListener("input", () => {
 var spinNumber = 0
 var order = ["Fred", "Moritz", "Matze",  "Lukas", "Gortzen", "Lars", "Simon", "Eric", "Hannes", "Jan", "Timo", "Max"] 
 
+var index
+
 document.getElementById("spin").addEventListener('click', () => {
  if (spinNumber != 0){
-	var c = wheel.items.splice(index-1, 1)
+	console.log(index)
+	var c = wheel.items.splice(index, 1)
+	console.log(c)
 	wheel.items = wheel.items
 }	
 	var indexName = order[spinNumber]
-	var index = wheel.items.map((e)=> {return e["label"]}).indexOf(indexName)
+	index = wheel.items.map((e)=> {return e["label"]}).indexOf(indexName)
 	if (index === -1) {
 		alert("error")
 		spinNumber++
