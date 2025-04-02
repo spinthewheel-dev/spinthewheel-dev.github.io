@@ -33,7 +33,7 @@ document.getElementById("input").addEventListener("input", () => {
 		wheel.items = val
 	}, true)
 var spinNumber = 0
-var order = ["Hannes", "Timo", "Max", "Jan", "Moritz", "Matze", "Fred", "Lukas", "Gortzen", "Lars", "Simon", "Eric"] 
+var order = ["Hannes", "Jan", "Timo", "Max", "Fred", "Moritz", "Matze",  "Lukas", "Gortzen", "Lars", "Simon", "Eric"] 
 
 document.getElementById("spin").addEventListener('click', () => {
  if (spinNumber != 0){
